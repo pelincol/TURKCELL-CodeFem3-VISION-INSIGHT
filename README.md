@@ -10,6 +10,16 @@ TURKCELL Geleceği Yazan Kadınlar Yapay Zeka Programı kapsamında,
 
 ----------------------------------------------------------------------
 
+Proje Hakkında;
+
+Projede model eğitiminde kullanılan veriseti;
+
+*MERL SHOPPING DATASET*: https://www.merl.com/research/downloads/MERL_Shopping_Dataset
+
+*MERL SHOPPING DATASET DOWNLOAD LINK:* https://www.merl.com/pub/tmarks/MERL_Shopping_Dataset/
+
+----------------------------------------------------------------------
+
 PROJECT GOOGLE DRIVE: https://drive.google.com/drive/u/0/folders/1t80qNHSfx3cm5a_S7P-cWQaQV7ibpua-
 
 DATASET LABEL FILES: https://drive.google.com/drive/u/0/folders/1SN3x6wkf0sLEhTejimXQgH9VmSwek2rA
