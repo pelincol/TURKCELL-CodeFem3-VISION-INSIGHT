@@ -6,7 +6,7 @@ TURKCELL Geleceği Yazan Kadınlar Yapay Zeka Programı kapsamında,
 
 "VISION-INSIGHT: Gerçek Zamanlı Görüntü İşleme ile Müşteri Tercih Analizi Sistemi" projemizi size sunmaktayız.
 
-Proje Ekip Üyeleri: Pelin Nur ÇÖL, Selay YIRTIMCI, Yağmur BAYRAK
+**Proje Ekip Üyeleri:** Pelin Nur ÇÖL, Selay YIRTIMCI, Yağmur BAYRAK
 
 ----------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ DATASET VIDEO FILES: https://drive.google.com/drive/u/0/folders/1pDq_SOveelxqY88
 
 TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0ECpfDUhXg_01nBhTn91TfuvRDgpG
 
-EXAMPLE OF VIDEO TESTING RESULTS: https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
+**!!! EXAMPLE OF VIDEO TESTING RESULTS:** https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
 ----------------------------------------------------------------------
 
