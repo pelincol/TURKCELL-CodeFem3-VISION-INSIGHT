@@ -1,0 +1,9 @@
+https://www.merl.com/pub/tmarks/MERL_Shopping_Dataset/
+
+https://www.merl.com/research/downloads/MERL_Shopping_Dataset
+
+https://www.merl.com/pub/tmarks/MERL_Shopping_Dataset/ReadMe.txt
+
+https://www.merl.com/publications/TR2016-080
+
+https://github.com/rushabhdharia/action-detection

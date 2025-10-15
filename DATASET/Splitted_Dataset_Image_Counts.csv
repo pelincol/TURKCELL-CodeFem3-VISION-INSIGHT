@@ -1,0 +1,8 @@
+class;test;train;val;total
+Background;1054;2368;763;4185
+Hand_In_Shelf;3400;4473;1118;8991
+Inspect_Product;4646;10889;4234;19769
+Inspect_Shelf;6947;13920;5630;26497
+Reach_To_Shelf;3713;8585;2236;14534
+Retract_From_Shelf;3817;8704;2460;14981
+TOTAL;23577;48939;16441;88957
