@@ -45,6 +45,8 @@ EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
 7. RUN CODE: Kodunuzu çalıştırabilirsiniz.
    
 8. Test sonuçlarını alacaksınız.
+  
+    -> 4 adet örnek test sonuçları için -> https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
 ----------------------------------------------------------------------
 
