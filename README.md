@@ -51,9 +51,14 @@ EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
 CLASSES:
 
 "0": "Background"
+
 "1": "Reach_To_Shelf"
+
 "2": "Retract_From_Shelf"
+
 "3": "Hand_In_Shelf"
-"4": "Inspect_Product"  
+
+"4": "Inspect_Product"
+
 "5": "Inspect_Shelf"
 
