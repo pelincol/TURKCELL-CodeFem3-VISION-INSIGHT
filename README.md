@@ -46,7 +46,7 @@ EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
    
 8. Test sonuçlarını alacaksınız.
   
-    -> 4 adet örnek test sonuçları için -> https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
+-> 4 farklı örnek test sonuçları: https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
 ----------------------------------------------------------------------
 
