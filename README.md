@@ -18,7 +18,7 @@ DATASET VIDEO FILES: https://drive.google.com/drive/u/0/folders/1pDq_SOveelxqY88
 
 TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0ECpfDUhXg_01nBhTn91TfuvRDgpG
 
-**(!! IMPORTANT !!) EXAMPLE OF VIDEO TESTING RESULTS:** https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
+**EXAMPLE OF VIDEO TESTING RESULTS:** https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
 ----------------------------------------------------------------------
 
@@ -46,7 +46,8 @@ EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
    
 8. Test sonuçlarını alacaksınız.
   
-   4 farklı örnek test sonuçları: https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
+   ***!!! IMPORTANT !!!***
+   **EXAMPLE OF VIDEO TESTING RESULTS:**  https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
 ----------------------------------------------------------------------
 
