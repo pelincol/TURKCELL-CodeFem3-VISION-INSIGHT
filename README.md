@@ -47,6 +47,7 @@ EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
 8. Test sonuçlarını alacaksınız.
   
    ***!!! IMPORTANT !!!***
+   
    **EXAMPLE OF VIDEO TESTING RESULTS:**  https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
 ----------------------------------------------------------------------
