@@ -8,7 +8,7 @@ TURKCELL Geleceği Yazan Kadınlar Yapay Zeka Programı kapsamında,
 
 Proje Ekip Üyeleri: Pelin Nur ÇÖL, Selay YIRTIMCI, Yağmur BAYRAK
 
-
+----------------------------------------------------------------------
 
 EĞİTİLMİŞ MODEL: best.pt (TRAINED-MODEL klasörü altında bulunmaktadır.)
 
