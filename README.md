@@ -18,7 +18,7 @@ DATASET VIDEO FILES: https://drive.google.com/drive/u/0/folders/1pDq_SOveelxqY88
 
 TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0ECpfDUhXg_01nBhTn91TfuvRDgpG
 
-EXAMPLE OF VIDEO TESTING RESULTS: Shttps://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
+EXAMPLE OF VIDEO TESTING RESULTS: https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
 ----------------------------------------------------------------------
 
@@ -50,11 +50,10 @@ EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
 
 CLASSES:
 
-{
-  "0": "Background",
-  "1": "Reach_To_Shelf",
-  "2": "Retract_From_Shelf",
-  "3": "Hand_In_Shelf",
-  "4": "Inspect_Product",
-  "5": "Inspect_Shelf"
-}
+"0": "Background"
+"1": "Reach_To_Shelf"
+"2": "Retract_From_Shelf"
+"3": "Hand_In_Shelf"
+"4": "Inspect_Product"  
+"5": "Inspect_Shelf"
+
