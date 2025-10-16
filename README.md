@@ -107,10 +107,14 @@ TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0EC
 7. RUN CODE: Kodunuzu çalıştırabilirsiniz.
    
 8. Test sonuçlarını alacaksınız.
-  
+
+----------------------------------------------------------------------
+
    ***!!! IMPORTANT !!!***
    
    **EXAMPLE OF VIDEO TESTING RESULTS:**  https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
+
+   **TEST DEMO VIDEO:** https://drive.google.com/drive/u/0/folders/1iNNIQ8YSQnesq1CEiTY63dHIdm2K-1b3
 
 ----------------------------------------------------------------------
 
