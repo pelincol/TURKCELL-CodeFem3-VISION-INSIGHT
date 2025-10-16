@@ -48,6 +48,7 @@ Eğitim sonucunda EarlyStopping (patience=10) doğrulama kaybındaki iyileşmeni
 
 "5": "Inspect_Shelf"
 
+Background (Arka Plan): Raf ya da ürünle belirgin bir etkileşimin olmadığı genel sahneler.
 
 Reach_To_Shelf (Rafa Uzanma): Müşterinin elini raftaki ürüne doğru uzattığı, temas öncesi yaklaşma anı.
 
@@ -58,8 +59,6 @@ Hand_In_Shelf (Elin Raf İçinde): Elin raf bölmesinin içinde bulunduğu, ür�
 Inspect_Product (Ürünü İnceleme): Ürünün elde tutulup ambalaj/etiket gibi ayrıntıların incelendiği yakın bakış anı.
 
 Inspect_Shelf (Rafı İnceleme): Ürün elde değilken, raf üzerindeki ürünlerin gözle tarandığı/arındığı an.
-
-Background (Arka Plan): Raf ya da ürünle belirgin bir etkileşimin olmadığı genel sahneler.
 
 ----------------------------------------------------------------------
 
