@@ -48,7 +48,6 @@ Eğitim sonucunda EarlyStopping (patience=10) doğrulama kaybındaki iyileşmeni
 
 "5": "Inspect_Shelf"
 
-----------------------------------------------------------------------
 
 Reach_To_Shelf (Rafa Uzanma): Müşterinin elini raftaki ürüne doğru uzattığı, temas öncesi yaklaşma anı.
 
