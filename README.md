@@ -10,9 +10,63 @@ TURKCELL Geleceği Yazan Kadınlar Yapay Zeka Programı kapsamında,
 
 ----------------------------------------------------------------------
 
-Proje Hakkında;
+**Proje Hakkında;**
 
-Projede model eğitiminde kullanılan veriseti;
+Market raflarının önüne yerleştirilmiş sabit bir kameradan alınan videolardan yararlanılarak müşterilerin temsili davranışlarının otomatik olarak tanınması hedeflenmiştir. Videolardan tek tek görüntüler çıkarılmış; "Rafa Uzan", "Raftan Geri Çek", "Rafa El Koy", "Ürünü İncele", "Rafı İncele" ve "Arka Plan" gibi altı temel hareket etiketlenmiş ve sistem bu örneklerle kademeli biçimde eğitilmiştir. Verinin bir bölümü eğitim (train), daha küçük bir bölümü doğrulama (validation), en sona ayrılan tamamen farklı bir bölüm ise gerçek hayata benzer bir sınav niteliğinde bağımsız test için kullanılmıştır. Elde edilen modelin ilk tahminindeki doğruluk oranı yaklaşık %28–32 aralığında gözlenmiş; “ilk beş tahminden biri doğru mu?” ölçütünde (Top-5) bu oran %94–95 düzeyinde gerçekleşmiştir. Çalışma, mağaza içinde hangi rafta hangi ürüne daha fazla ilgi gösterildiğinin anlaşılması, yerleşim ve stok kararlarının iyileştirilmesi ve yoğunluk anlarının saptanması gibi uygulamalara temel oluşturmaktadır. Amaç, mahremiyete saygı gözetilerek (yüz tanımaya odaklanılmadan) genel davranışların analiz edilmesi ve bu yolla işletmelere öngörü ile hız kazandırılmasıdır.
+
+----------------------------------------------------------------------
+
+**DATASET ÖN İŞLEME:**
+
+Eğitimden önce, MERL Shopping Dataset arşivleri indirildi ve bütünlük/doğrulama kontrolleri yapılarak veri yapısı çözümlendi; eylem açıklamalarındaki zaman damgaları esas alınarak Reach_To_Shelf, Retract_From_Shelf, Hand_In_Shelf, Inspect_Product, Inspect_Shelf ve Background olmak üzere 6 sınıflık bir şema tanımlandı. Tüm videolar tek biçeme getirildi ve kare çıkarımı 15 FPS’te gerçekleştirildi; eylem aralığına düşen kareler tam örneklenirken, veri dengesini sağlamak için Background sınıfı yaklaşık 1/6 oranında aşağı örneklendi. Üretilen kareler, en-boy oranı korunarak 224×224 hedef boyuta yeniden ölçeklendi (gerekli yerlerde merkez kırpma/padding uygulanarak) ve bozuk/okunamayan kareler elendi; sınıf adları ile sayısal etiketler için tekil bir class-index eşlemesi ve örnek başına meta bilgileri içeren bir manifest CSV oluşturuldu. Kişi sızıntısını engellemek amacıyla denek kimliği bazlı ayrım önceden tanımlanarak 1–20 train, 21–26 val, 27–41 test listeleri üretildi ve dosya düzeni {split}/{class}/SUBJxx_SEQyy_FRAMEzzzzz.jpg olacak şekilde standartlaştırıldı; son olarak, örnek sayıları ve etiket tutarlılığı denetlenip dataset.yaml/CSV ile birlikte paketlenerek arşiv ve paylaşım için Google Drive’a aktarıldı.
+
+----------------------------------------------------------------------
+
+**TRAIN:**
+
+Eğitim aşamasında, MERL Shopping Dataset videolarından 15 FPS hızında çıkarılan karelerle, Reach_To_Shelf, Retract_From_Shelf, Hand_In_Shelf, Inspect_Product, Inspect_Shelf ve Background olmak üzere 6 sınıflı bir görüntü-sınıflandırma kümesi oluşturuldu; kişi (subject) sızıntısını önlemek amacıyla subject-bazlı ayrım uygulanarak 1–20 numaralı denekler train, 21–26 val, 27–41 test olarak ayrıldı ve eylem aralığı dışında kalan arka plan kareleri her 6 karede 1 tutuldu. Eğitim, Ultralytics’in sınıflandırma modeli yolo11n-cls ile 224×224 giriş boyutu, batch=32, epoch=60 ve early stopping (patience=10) etkin olacak şekilde yürütüldü; AdamW optimizasyonu (başlangıç öğrenme oranı 5×10⁻⁴), mixup=0 ve cutmix=0, AMP kapalı, seed=0 ve device=0 (GPU) ayarları kullanıldı. Eğitim çıktılarına ilişkin günlükler yerel runs klasörüne yazılırken en iyi ağırlık (best.pt), son ağırlık (last.pt) ve metrik kayıtları (results.csv) güvenli kopyalama ile Google Drive’a aktarılıp arşivlendi.
+
+----------------------------------------------------------------------
+
+**TRAIN, VALIDATION, TEST SONUÇLARI:**
+
+Eğitim sonucunda EarlyStopping (patience=10) doğrulama kaybındaki iyileşmenin durmasıyla tetiklenmiş ve süreç 12. epoch’ta sonlandırılmış; en düşük doğrulama kaybını veren model ağırlıkları 2. epoch’ta elde edilerek best.pt adıyla kaydedilmiştir. Train aşamasında kayıp (loss) düzenli biçimde azalmış, doğruluk metrikleri doğrulama eğilimleriyle uyumlu bir yakınsama göstermiştir (ayrıntılı sayısal değerler "EXPERIMENTAL-RESULTS" dosyasında results.csv’de yer almaktadır). Bu en iyi modelle Validation kümesinde Top-1 doğruluk %31,5, Top-5 doğruluk %95,1; bağımsız Test kümesinde ise Top-1 doğruluk %27,62, Top-5 doğruluk %94,11 olarak raporlanmıştır.
+
+----------------------------------------------------------------------
+
+**CLASSES:**
+
+"0": "Background"
+
+"1": "Reach_To_Shelf"
+
+"2": "Retract_From_Shelf"
+
+"3": "Hand_In_Shelf"
+
+"4": "Inspect_Product"
+
+"5": "Inspect_Shelf"
+
+----------------------------------------------------------------------
+
+Reach_To_Shelf (Rafa Uzanma): Müşterinin elini raftaki ürüne doğru uzattığı, temas öncesi yaklaşma anı.
+
+Retract_From_Shelf (Raftan Geri Çekilme): Elin raftan uzaklaştığı, ürünü aldıktan ya da almadan geri çekildiği an.
+
+Hand_In_Shelf (Elin Raf İçinde): Elin raf bölmesinin içinde bulunduğu, ürüne fiziksel temas/yerleştirme yapılan anlar.
+
+Inspect_Product (Ürünü İnceleme): Ürünün elde tutulup ambalaj/etiket gibi ayrıntıların incelendiği yakın bakış anı.
+
+Inspect_Shelf (Rafı İnceleme): Ürün elde değilken, raf üzerindeki ürünlerin gözle tarandığı/arındığı an.
+
+Background (Arka Plan): Raf ya da ürünle belirgin bir etkileşimin olmadığı genel sahneler.
+
+----------------------------------------------------------------------
+
+**DATASET:**
+
+Model eğitiminde kullanılan veriseti;
 
 *MERL SHOPPING DATASET*: https://www.merl.com/research/downloads/MERL_Shopping_Dataset
 
@@ -32,7 +86,7 @@ TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0EC
 
 ----------------------------------------------------------------------
 
-EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
+**EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:**
 
 1. EĞİTİLMİŞ MODEL: best.pt ("TRAINED-MODEL" klasörü altında bulunmaktadır.). "best.pt" dosyasını indiriniz.
 
@@ -62,17 +116,4 @@ EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:
 
 ----------------------------------------------------------------------
 
-CLASSES:
-
-"0": "Background"
-
-"1": "Reach_To_Shelf"
-
-"2": "Retract_From_Shelf"
-
-"3": "Hand_In_Shelf"
-
-"4": "Inspect_Product"
-
-"5": "Inspect_Shelf"
 
