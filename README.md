@@ -116,6 +116,8 @@ TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0EC
 
 13. Uygulamamızı test ettiğiniz için teşekkür ederiz.
 
+**WEB APP DEMO VIDEO:** 
+
 ----------------------------------------------------------------------   
 
 **GOOGLE COLAB'DE EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:**
@@ -146,10 +148,7 @@ TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0EC
 
 **EXAMPLE OF VIDEO TESTING RESULTS:**  https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
-----------------------------------------------------------------------
-
-
-   **TEST DEMO VIDEO:** https://drive.google.com/drive/u/0/folders/1iNNIQ8YSQnesq1CEiTY63dHIdm2K-1b3
+**TEST DEMO VIDEO:** https://drive.google.com/drive/u/0/folders/1iNNIQ8YSQnesq1CEiTY63dHIdm2K-1b3
 
 ----------------------------------------------------------------------
 
