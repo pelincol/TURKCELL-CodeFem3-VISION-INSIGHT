@@ -72,6 +72,8 @@ Model eğitiminde kullanılan veriseti;
 
 ----------------------------------------------------------------------
 
+**LINKS:**
+
 PROJECT GOOGLE DRIVE: https://drive.google.com/drive/u/0/folders/1t80qNHSfx3cm5a_S7P-cWQaQV7ibpua-
 
 DATASET LABEL FILES: https://drive.google.com/drive/u/0/folders/1SN3x6wkf0sLEhTejimXQgH9VmSwek2rA
@@ -80,11 +82,45 @@ DATASET VIDEO FILES: https://drive.google.com/drive/u/0/folders/1pDq_SOveelxqY88
 
 TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0ECpfDUhXg_01nBhTn91TfuvRDgpG
 
-**EXAMPLE OF VIDEO TESTING RESULTS:** https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
-
 ----------------------------------------------------------------------
 
-**EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:**
+***!!! IMPORTANT !!! IMPORTANT !!! IMPORTANT !!!***
+   
+**WEB SITE UYGULAMASINDA EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:**
+
+*(Not: Tüm Kullanıcılar İçin Kullanımı Uygundur.)*
+
+1. WEB APP LINK: https://codefem3.site
+
+2. ALTERNATİF WEB APP LINK: https://vision-insight-728185266329.europe-west1.run.app
+
+3. Her iki link de aynı web uygulamasını açar.
+
+4. Uygulama sizden boyutu çok büyük olmayacak şekilde .mp4 uzantılı dosya yüklemenizi istiyor. (tercihen < 32 MB)
+
+5. Uygulamayı test ederken kullanabileceğiniz örnek test videolarına ilgili linkten ulaşabilirsiniz: https://drive.google.com/drive/u/0/folders/1aKwxQPHdhnqISGHIaQtndQckios13pOr
+
+6. Seçtiğiniz bir dosyayı bilgisayarınıza indiriniz. (Not: Testin hızlı bitmesini isterseniz "mini.mp4" adlı dosya ile teste başlayabilirsiniz.)
+
+7. Ardından email adresinizi giriniz. Sonuçları içeren .zip dosyasını emailinize gönderecektir. Fakat bu özellik şu anda aktif değildir.
+
+8. "Testi Başlat" isimli butona basınız.
+
+9. Test uzun sürebilir. Endişelenmeyiniz. Videonuzun büyüklüğüne bağlı olarak test süresi 15-30 dakikaya kadar çıkabilir. Lütfen sekmeyi kapatmayınız.
+
+10. Web uygulama sonuçları içeren .zip dosyasını otomatik olarak bilgisayarınıza indirecektir ve ekranda buton altında "Sonuç ZIP indirildi." bilgilendirme mesajı çıkacaktır.
+
+11. Bilgisayarınızda "İndirilenler" klasörünüze bakınız. "VIDEO_NAME_results.zip" dosyasını göreceksiniz (VIDEO_NAME yüklediğiniz dosyanın ismidir).
+
+12. İçerisinde her bir karesi bir sınıfa etiketlenmiş .mp4 videosu ve sonuç analiz dosyaları bulunacaktır.
+
+13. Uygulamamızı test ettiğiniz için teşekkür ederiz.
+
+----------------------------------------------------------------------   
+
+**GOOGLE COLAB'DE EĞİTİLMİŞ MODELİ TEST ETME ADIMLARI:**
+
+*(Not: Yazılım Geliştirme Uzmanları İçin Kullanımı Uygundur.)*
 
 1. EĞİTİLMİŞ MODEL: best.pt ("TRAINED-MODEL" klasörü altında bulunmaktadır.). "best.pt" dosyasını indiriniz.
 
@@ -108,11 +144,10 @@ TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0EC
    
 8. Test sonuçlarını alacaksınız.
 
+**EXAMPLE OF VIDEO TESTING RESULTS:**  https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
+
 ----------------------------------------------------------------------
 
-   ***!!! IMPORTANT !!!***
-   
-   **EXAMPLE OF VIDEO TESTING RESULTS:**  https://drive.google.com/drive/u/0/folders/16cIH5difla53LjKoxAtv0cofWl35Aqlh
 
    **TEST DEMO VIDEO:** https://drive.google.com/drive/u/0/folders/1iNNIQ8YSQnesq1CEiTY63dHIdm2K-1b3
 
