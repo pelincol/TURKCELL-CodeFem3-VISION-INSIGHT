@@ -90,7 +90,7 @@ TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0EC
 
 *(Not: Tüm Kullanıcılar İçin Kullanımı Uygundur.)*
 
-1. WEB APP LINK: https://codefem3.site
+**1. WEB APP LINK:** https://codefem3.site
 
 2. ALTERNATİF WEB APP LINK: https://vision-insight-728185266329.europe-west1.run.app
 
