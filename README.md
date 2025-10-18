@@ -118,7 +118,7 @@ TRAINED-MODEL FILE (best.pt): https://drive.google.com/drive/u/0/folders/1WSX0EC
 
 13. Uygulamamızı test ettiğiniz için teşekkür ederiz.
 
-**WEB APP DEMO VIDEO:** 
+**WEB APP DEMO VIDEO:** https://drive.google.com/drive/u/0/folders/1ExZhz75baZux-932JcApSD86l_TI-L7W 
 
 ----------------------------------------------------------------------   
 
